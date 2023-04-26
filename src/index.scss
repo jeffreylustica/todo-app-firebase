@@ -1,0 +1,31 @@
+*, *::before, *::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+:root {
+  --ff-roboto: 'Roboto', sans-serif;
+  --fs-body: .875rem;
+  --fs-sm: .625rem;
+  --fs-xs: .5rem;
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --clr-primary:  240, 60%, 52%;
+  --clr-black:  0, 0%, 0%;
+  --clr-white:  0, 0%, 100%;
+
+  @media screen and (min-width: 700px) {
+    --fs-body: 1rem;
+    --fs-sm: .875rem;
+    --fs-xs: .625rem;
+  }
+}
+
+body {
+  font-family: var(--ff-roboto);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
+  color: hsla(var(--clr-black), .8);
+  line-height: 1.6;
+}

@@ -1,0 +1,45 @@
+.edit-form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    background-color: hsla(var(--clr-black), .75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2em;
+    }
+
+    &__input {
+        padding: .75em;
+        font-size: 1.25rem;
+        margin-right: .5em;
+    }
+
+    &__submit {
+        padding: 1em 1.25em;
+        font-weight: var(--fw-bold);
+        color: hsla(var(--clr-white), .95);
+        background-color: hsla(var(--clr-primary), 1);
+        border: none;
+        border-radius: .25em;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+        background-color: hsla(var(--clr-primary), .9);
+        }
+
+        svg {
+            font-size: 2.5em;
+        }
+    }
+}

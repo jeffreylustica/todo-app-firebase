@@ -1,0 +1,83 @@
+.todo {
+    display: flex;
+    align-items: center;
+    background-color: hsla(var(--clr-primary), .5);
+    padding: 1em;
+    color: hsla(var(--clr-black), .95);
+    border: 2px solid hsla(var(--clr-primary), .5);
+    border-radius: .25em;
+    width: 100%;
+    font-size: 1.25rem;
+    margin: 1em 0 .25em;
+
+    &.completed {
+        background-color: hsla(var(--clr-black), .75);
+        color: hsla(var(--clr-black), .25);
+    }
+
+    &__checkbox {
+        margin-right: .25em;
+    }
+
+    &__text {
+        flex-grow: 1;
+        word-wrap: break-word;
+
+        &.checked {
+            text-decoration: line-through;
+        }
+    }
+
+    
+
+    button {
+        padding: .125em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        margin-left: .25em;
+        background: none;
+        border: none;
+
+        svg {
+            font-size: 1.75em;
+            color: hsla(var(--clr-black), .95);
+        }
+
+        &:hover {
+            svg {
+                color: hsla(var(--clr-black), .75);
+            }
+        }
+    }
+}
+
+.todo-comments {
+    &__form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &__new-comment {
+            margin-right: auto;
+            width: 100%;
+            padding: .25em;
+            font-size: 1rem;
+        }
+
+        &__submit-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.25rem;
+            padding: .25em;
+            border: none;
+            color: hsla(var(--clr-white), .95);
+            background-color: hsla(var(--clr-primary), 1);
+            margin-left: .75em;
+            border-radius: .125em;
+            cursor: pointer;
+        }
+    }
+}

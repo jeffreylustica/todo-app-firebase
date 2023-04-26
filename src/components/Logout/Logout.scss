@@ -1,0 +1,15 @@
+.account__log-out {
+    font-size: 1rem;
+    font-weight: var(--fw-bold);
+    padding: .25em 1.25em;
+    color: hsla(var(--clr-white), .95);
+    background-color: hsla(var(--clr-primary));
+    border: none;
+    border-radius: .25em;
+    cursor: pointer;
+    margin-bottom: .5em;
+
+    &:hover {
+        background-color: hsla(var(--clr-primary), .8);
+    }
+}

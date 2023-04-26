@@ -1,0 +1,45 @@
+.app {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__title {
+        text-align: center;
+        margin-top: 2em;
+        margin-bottom: .5em;
+    }
+}
+
+.container {
+    width: min(94%, 1200px);
+    margin: 0 auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+
+    & > * {
+        margin-bottom: 1em;
+    }
+
+    input {
+        padding: .5em;
+    }
+
+    button {
+        font-size: 1.125em;
+        color: hsla(var(--clr-white), .95);
+        padding: .5em 1.25em;
+        background-color: hsl(var(--clr-primary));
+        border: none;
+        border-radius: .25em;
+        cursor: pointer;
+
+        &:hover {
+            background-color: hsla(var(--clr-primary), .75);
+        }
+    }
+}
